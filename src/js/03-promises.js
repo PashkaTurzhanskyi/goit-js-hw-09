@@ -28,6 +28,7 @@ function onSubmit(event) {
   let amount = Number(inputAmountEl.value);
   let position = 0;
   delay = delay - step;
+  form.reset();
   for (let i = 0; i < amount; i += 1) {
     position = i + 1;
     delay += step;

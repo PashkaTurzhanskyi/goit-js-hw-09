@@ -24,6 +24,7 @@ const options = {
       buttonStart.disabled = false;
       buttonStart.addEventListener('click', () => {
         timerId = setInterval(() => {
+          buttonStart.disabled = true;
           const difference = selectedDates[0].getTime() - new Date().getTime();
           if (difference < 1000) {
             clearInterval(timerId);
